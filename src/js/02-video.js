@@ -17,7 +17,7 @@ function savePlaybackTime({ seconds }) {
 }
 
 function getPlaybackTime() {
-  dataJson = Number(localStorage.getItem(STORAGE_KEY));
+  let dataJson = Number(localStorage.getItem(STORAGE_KEY));
   if (dataJson) {
     currentTime = dataJson;
   }
